@@ -1,0 +1,153 @@
+/*! minireset.css v0.0.5 | MIT License | github.com/jgthms/minireset.css */
+// Blocks
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+// List
+ul {
+  list-style: none;
+}
+// Form
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+// Box sizing
+html {
+  box-sizing: border-box;
+}
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+// Media
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+// Iframe
+iframe {
+  border: 0;
+}
+// Table
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+html {
+  font-size:15px;
+  font-size:93.75%;
+}
+
+$gray-blue: #888DA7;
+$weldon-blue: #7EA2AA;
+$blue-green: #8BE8CB;
+
+.calculator-wrap {
+  width: 100%;
+  margin: 30px auto;
+  max-width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+
+  .calculator-screen {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    font-size: 1.6rem;
+    line-height: 1em;
+    border-radius: 5px 5px 0 0;
+    padding: 0.5em;
+    background-color: $gray-blue;
+    text-align: right;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+
+    button {
+      flex-basis: 25%;
+      background-color: $weldon-blue;
+      font-size: (16/15) * 1rem;
+      line-height: 1.25rem;
+      padding: 0.5em 0.75em;
+      cursor: pointer;
+      border: none;
+      border-top: 1px solid rgba(0, 0, 0, 0.75);
+      border-right: 1px solid rgba(0, 0, 0, 0.75);
+
+      &:nth-child(1), &:nth-child(2) {
+        background-color: $gray-blue;
+      }
+
+      &.btn-span-3 {
+        flex-basis: 75%;
+      }
+
+      &.btn-span-2 {
+        flex-basis: 50%;
+      }
+
+      &.btn-action {
+        background-color: $blue-green;
+        border-right: none;
+      }
+
+      &.btn-bottom-left {
+        border-bottom-left-radius: 5px;
+      }
+
+      &.btn-bottom-right {
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+}

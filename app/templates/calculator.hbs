@@ -1,0 +1,23 @@
+<div class="calculator-wrap">
+  {{input name="calculator-screen" id="calculator-screen" value="0" readonly="true" class="calculator-screen"}}
+  <div class="buttons-container">
+    <button {{action "themeSelect"}} class="btn-span-2">Theme: Default</button>
+    <button {{action "clearPress"}}>Clear</button>
+    <button {{action "actionPress" "divide"}} class="btn-action">÷</button>
+    <button {{action "numberPress" 7}}>7</button>
+    <button {{action "numberPress" 8}}>8</button>
+    <button {{action "numberPress" 9}}>9</button>
+    <button {{action "actionPress" "multiply"}} class="btn-action">x</button>
+    <button {{action "numberPress" 4}}>4</button>
+    <button {{action "numberPress" 5}}>5</button>
+    <button {{action "numberPress" 6}}>6</button>
+    <button {{action "actionPress" "subtract"}} class="btn-action">-</button>
+    <button {{action "numberPress" 1}}>1</button>
+    <button {{action "numberPress" 2}}>2</button>
+    <button {{action "numberPress" 3}}>3</button>
+    <button {{action "actionPress" "add"}} class="btn-action">+</button>
+    <button {{action "numberPress" 0}} class="btn-span-2 btn-bottom-left">0</button>
+    <button {{action "numberPress" "."}}>.</button>
+    <button {{action "calculateResult"}} class="btn-action btn-bottom-right">=</button>
+  </div>
+</div>

@@ -1,0 +1,139 @@
+/*! minireset.css v0.0.5 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+html {
+  font-size: 15px;
+  font-size: 93.75%;
+}
+
+.calculator-wrap {
+  width: 100%;
+  margin: 30px auto;
+  max-width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+.calculator-wrap .calculator-screen {
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  font-size: 1.6rem;
+  line-height: 1em;
+  border-radius: 5px 5px 0 0;
+  padding: 0.5em;
+  background-color: #888DA7;
+  text-align: right;
+}
+.calculator-wrap .buttons-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+.calculator-wrap .buttons-container button {
+  flex-basis: 25%;
+  background-color: #7EA2AA;
+  font-size: 1.0666666667rem;
+  line-height: 1.25rem;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.75);
+  border-right: 1px solid rgba(0, 0, 0, 0.75);
+}
+.calculator-wrap .buttons-container button:nth-child(1), .calculator-wrap .buttons-container button:nth-child(2) {
+  background-color: #888DA7;
+}
+.calculator-wrap .buttons-container button.btn-span-3 {
+  flex-basis: 75%;
+}
+.calculator-wrap .buttons-container button.btn-span-2 {
+  flex-basis: 50%;
+}
+.calculator-wrap .buttons-container button.btn-action {
+  background-color: #8BE8CB;
+  border-right: none;
+}
+.calculator-wrap .buttons-container button.btn-bottom-left {
+  border-bottom-left-radius: 5px;
+}
+.calculator-wrap .buttons-container button.btn-bottom-right {
+  border-bottom-right-radius: 5px;
+}
+
+/*# sourceMappingURL=ember-calculator.css.map */
